@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jogo.js"></script>
+    <title>Document</title>
+</head>
+<body class="bgGeral" onresize="ajusteTamanhoJogo()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="">
+            <img id="v3"src="imagens/coracao_cheio.png" alt="">
+            <img id="v4"src="imagens/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">Tempo restante <span id="cronometro"></span>
+
+        </div>
+    </div>
+    <!-- vou fazer depois o pausa -->
+    <!-- <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-left">
+                <button onclick="pausar()"  type="button" class="btn btn-danger">
+                    pausar
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-left">
+                <button onclick="continuar()"  type="button" class="btn btn-danger">
+                    continuar
+                </button>
+            </div>
+            
+        </div>
+    </div> -->
+
+    <script>
+         document.getElementById('cronometro').innerHTML = tempo
+        
+        var criaMosca = setInterval( function(){
+            positionRandomic()
+        }, criaMosquitoTempo) 
+    </script>
+</body>
+</html>
